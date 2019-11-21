@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+
+<button>关灯</button>
+<button>开灯</button>
+<img src="../images/coder.jpg" alt="">
+
+
+<body>
+    <script src="../jquery-2.2.2.js"></script>
+</body>
+<script>
+    // 获取元素
+    $(function () {
+        // 注册开灯事件
+        let btn = $('button:nth-child(2)');
+        btn.on('click',function(){
+            $('body').css('backgroundColor','#ccc');
+        });
+    $('button:nth-child(1)').on('click',function () {
+        $('body').css('backgroundColor', '');
+
+    });
+});
+
+
+
+// 注册关灯事件
+
+
+
+</script>
+
+</html>
